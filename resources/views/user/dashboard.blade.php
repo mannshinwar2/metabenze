@@ -213,29 +213,227 @@
             <a href="/User/Deposit" class="btn btn-secondary flex-grow-1 flex-md-grow-0">Withdraw Income</a>
         </div>
 
-        <!-- ===== Additional Wallet Cards (User Wallet / Rewards etc.) ===== -->
-        <div class="col-12">
-            <div class="row g-3">
-                @for($i = 1; $i <= 9; $i++)
-                    <div class="col-12 col-md-4">
-                        <div class="card h-100">
-                            <div class="card-body d-flex align-items-center">
-                                <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="mb-0">₹100</h3>
-                                    <p class="mb-0" style="color:white;">User Wallet Balance</p>
-                                </div>
-                            </div>
-                        </div>
+      <div class="col-12">
+    <div class="row g-3">
+
+        <!-- 1. PRINCIPLE REFUND -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
                     </div>
-                @endfor
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">PRINCIPLE REFUND (Non-Working)</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- 2. DRAGGING INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">DRAGGING INCOME (Non-Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. DIRECT INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">DIRECT INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. LOCKING INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">LOCKING INCOME (Non-Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. RANK INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">RANK INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. GLOBAL TURNOVER INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">GLOBAL TURNOVER INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. META POOL INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">META POOL INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. BONUS INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">BONUS INCOME (Non-Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. LEVEL INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">LEVEL INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. REWARD INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">REWARD INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. DECISION MAKING INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">DECISION MAKING INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12. SALARY INCOME -->
+        <div class="col-12 col-md-4">
+            <div class="card h-100">
+                <div class="card-body d-flex align-items-center">
+                    <div class="p-3 rounded bg-soft-primary me-3" style="color:white!important">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="mb-0">₹100</h3>
+                        <p class="mb-0" style="color:white;">SALARY INCOME (Working)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
     </div>
 </div>
